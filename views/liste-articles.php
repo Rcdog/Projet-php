@@ -9,6 +9,8 @@
             <div class="card-body">
                 <h2 class="card-title"><?= $article->titre ?> </h2>
                 <p class="card-text">fait par <?= $article->auteur ?> </p>
+                <p class="card-text">
+                    <a class="text-align-right" href="index.php?route=details-articles&id=<?= $article->id ?>">Voir plus</a>
             </div>
         </div>
     <?php } ?>
