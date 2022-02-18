@@ -19,7 +19,7 @@
     <div class="container">
 
         <nav class="nav justify-content-center">
-            <a class="nav-link" href=#>login</a>
-            <a class="nav-link" href=#>blabla</a>
+            <a class="nav-link" href="index.php?route=home">Accueil</a>
+            <a class="nav-link" href="index.php?route=liste-articles">Met article</a>
             <a class="nav-link" href=#>nav test</a>
         </nav>
