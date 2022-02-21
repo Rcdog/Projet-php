@@ -28,4 +28,7 @@ switch ($route) {
     case 'ajout-articles-handler':
         include __DIR__ . '/controllers/ajout-articles-handler-controller.php';
         break;
+    case 'modif-articles':
+        include __DIR__ . '/controllers/modif-articles-controller.php';
+        break;
 }

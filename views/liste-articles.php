@@ -11,6 +11,9 @@
                 <p class="card-text">fait par <?= $article->auteur ?> </p>
                 <p class="card-text">
                     <a class="text-align-right" href="index.php?route=details-articles&id=<?= $article->id ?>">Voir plus</a>
+                    <br>
+                    <br>
+                    <a class="text-align-right" href="index.php?route=modif-articles&id=<?= $article->id ?>">modifier</a>
             </div>
         </div>
     <?php } ?>
