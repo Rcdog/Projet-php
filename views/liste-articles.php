@@ -14,6 +14,7 @@
                     <br>
                     <br>
                     <a class="text-align-right" href="index.php?route=modif-articles&id=<?= $article->id ?>">modifier</a>
+                    <a class="text-align-right" href="index.php?route=supp-articles&id=<?= $article->id ?>">supprimer</a>
             </div>
         </div>
     <?php } ?>

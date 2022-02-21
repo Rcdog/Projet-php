@@ -31,4 +31,7 @@ switch ($route) {
     case 'modif-articles':
         include __DIR__ . '/controllers/modif-articles-controller.php';
         break;
+    case 'supp-articles':
+        include __DIR__ . '/controllers/supp-articles-controller.php';
+        break;
 }

@@ -17,6 +17,7 @@
 
             <dt>text</dt>
             <dd><?= $article->contenu ?></dd>
+            <a class="text-align-right" href="index.php?route=supp-articles&id=<?= $article->id ?>">supprimer</a>
         </dl>
     </div>
 </div>

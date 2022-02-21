@@ -7,7 +7,7 @@ $article = Article::retrieveByPK($_GET['id']);
 
 if (empty($article)) erreur(404);
 
-if (!empty($_POST)); {
+if (!empty($_POST)) {
 
     if (
         !empty($_POST['titre'])
