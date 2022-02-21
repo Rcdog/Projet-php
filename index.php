@@ -22,4 +22,10 @@ switch ($route) {
     case 'details-articles':
         include __DIR__ . '/controllers/details-articles-controller.php';
         break;
+    case 'ajout-articles':
+        include __DIR__ . '/controllers/ajout-articles-controller.php';
+        break;
+    case 'ajout-articles-handler':
+        include __DIR__ . '/controllers/ajout-articles-handler-controller.php';
+        break;
 }
