@@ -22,4 +22,5 @@
             <a class="nav-link" href="index.php?route=home">Accueil</a>
             <a class="nav-link" href="index.php?route=liste-articles">Met article</a>
             <a class="nav-link" href="index.php?route=ajout-articles">ajouter un article</a>
+            <a class="nav-link" href="index.php?route=connexion">connexion</a>
         </nav>

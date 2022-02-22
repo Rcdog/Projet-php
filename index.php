@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 include_once __DIR__ . '/function.php';
 include_once __DIR__ . '/models/SimpleOrm.php';
 $conn = new mysqli('localhost', 'root', 'root');
@@ -33,5 +36,11 @@ switch ($route) {
         break;
     case 'supp-articles':
         include __DIR__ . '/controllers/supp-articles-controller.php';
+        break;
+    case 'connexion':
+        include __DIR__ . '/controllers/connexion-controller.php';
+        break;
+    case 'connexion-handler';
+        include __DIR__ . '/controllers/connexion-handler-controller.php';
         break;
 }
