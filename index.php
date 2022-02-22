@@ -46,4 +46,10 @@ switch ($route) {
     case 'deconnexion';
         include __DIR__ . '/controllers/deconnexion-controller.php';
         break;
+    case 'creer-compte';
+        include __DIR__ . '/controllers/creer-compte-controller.php';
+        break;
+    case 'creer-compte-handler';
+        include __DIR__ . '/controllers/creer-compte-handler-controller.php';
+        break;
 }

@@ -1,10 +1,8 @@
-<?php
+<?php include __DIR__ . '/parties/header.php'; ?>
 
-include __DIR__ . '/parties/header.php'; ?>
+<h1>Création de compte</h1>
 
-<h1>Connexion</h1>
-
-<form method="post" action="index.php?route=connexion-handler">
+<form method="post" action="index.php?route=creer-compte-handler">
     <div class="form-group row">
         <label for="login" class="col-sm-12 col-form-label">Identifiant</label>
         <div class="col-sm-12">
@@ -20,20 +18,15 @@ include __DIR__ . '/parties/header.php'; ?>
     </div>
 
     <div class="form-group row">
+        <label for="pseudo" class="col-sm-12 col-form-label">Pseudo</label>
+        <div class="col-sm-12">
+            <input type="text" class="form-control" name="pseudo" id="pseudo" placeholder="pseudo" required>
+        </div>
+    </div>
+
+    <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Connexion</button>
+            <button type="submit" class="btn btn-primary">Creer</button>
         </div>
     </div>
 </form>
-
-<div class="row">
-    <div class="col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <p class="card-text">Vous n'avez pas de compte sur mon blog ?</p>
-                <a href="index.php?route=creer-compte" class="btn btn-primary">creer un compte</a>
-            </div>
-        </div>
-    </div>
-
-    <?php include __DIR__ . '/parties/footer.php'; ?>
