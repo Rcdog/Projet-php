@@ -22,5 +22,10 @@
             <a class="nav-link" href="index.php?route=home">Accueil</a>
             <a class="nav-link" href="index.php?route=liste-articles">Met article</a>
             <a class="nav-link" href="index.php?route=ajout-articles">ajouter un article</a>
-            <a class="nav-link" href="index.php?route=connexion">connexion</a>
+
+            <?php if (empty($_SESSION['identifiant'])) : ?>
+                <a class="nav-link" href="index.php?route=connexion">connexion</a>
+            <?php else : ?>
+                <a class="nav-link" href="index.php?route=deconnexion">déconnexion</a>
+            <?php endif; ?>
         </nav>

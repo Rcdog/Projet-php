@@ -43,4 +43,7 @@ switch ($route) {
     case 'connexion-handler';
         include __DIR__ . '/controllers/connexion-handler-controller.php';
         break;
+    case 'deconnexion';
+        include __DIR__ . '/controllers/deconnexion-controller.php';
+        break;
 }
