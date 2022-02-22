@@ -25,6 +25,13 @@
     </div>
 
     <div class="form-group row">
+        <label for="avatar" class="col-sm-12 col-form-label">Avatar</label>
+        <div class="col-sm-12">
+            <input type="url" class="form-control" name="avatar" id="avatar" placeholder="avatar url" required>
+        </div>
+    </div>
+
+    <div class="form-group row">
         <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Creer</button>
         </div>

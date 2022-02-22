@@ -4,7 +4,8 @@ if (
     !empty($_POST['login'])
     && !empty($_POST['password'])
     && !empty($_POST['pseudo'])
-    // && !empty($_POST['avatar'])
+    && !empty($_POST['avatar'])
+    && filter_var($_POST['avatar'], FILTER_VALIDATE_URL) !== false
 
 
 ) {
@@ -18,7 +19,7 @@ if (
     $utilisateur->identifiant = $_POST['login'];
     $utilisateur->mot_de_passe = $passhash;
     $utilisateur->pseudo = $_POST['pseudo'];
-    // $utilisateur->avatar = $_POST['avatar'];
+    $utilisateur->avatar = $_POST['avatar'];
 
     $utilisateur->save();
     redirection('connexion');
